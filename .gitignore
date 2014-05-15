@@ -2,4 +2,5 @@
 .buidpath
 .project
 system/*
+vendor/*
 *~

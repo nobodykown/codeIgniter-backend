@@ -1,0 +1,29 @@
+{% extends 'template/backend.html' %}
+    {% block content %}
+        <form class="pure-form pure-form-stacked" action="">
+            <div class="pure-control-group">
+                <label for="username">用户名</label>
+                <input type="text" name="username" placeholder="管理猿" disabled />
+            </div>
+            <div class="pure-control-group">
+                <label for="email">电子邮件</label>
+                <input type="email" name="email" />
+            </div>
+            <div class="pure-controls">
+                <button class="pure-button pure-button-primary" type="submit">修改信息</button>
+            </div>
+        </form>
+        <form class="pure-form pure-form-stacked" action="">
+            <div class="pure-control-group">
+                <label for="orig_password">原密码</label>
+                <input type="password" name="orig_password" />
+            </div>
+            <div class="pure-control-group">
+                <label for="new_password">新密码</label>
+                <input type="password" name="new_password" />
+            </div>
+            <div class="pure-controls">
+                <button class="pure-button pure-button-primary" type="submit">修改密码</button>
+            </div>
+        </form>
+    {% endblock %}

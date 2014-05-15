@@ -1,0 +1,24 @@
+{% extends 'template/backend.html' %}
+    {% block content %}
+        <form class="pure-form pure-form-stacked" action="">
+            <div class="pure-control-group">
+                <label for="sitename">站点名称</label>
+                <input type="text" name="sitename" />
+            </div>
+            <div class="pure-control-group">
+                <label for="contact">联系方式</label>
+                <input type="text" name="contact" class="pure-input-1-2" />
+            </div>
+            <div class="pure-control-group">
+                <label for="ga">Google Analytics 代码</label>
+                <input type="text" name="ga" class="pure-input-1-2" />
+            </div>
+            <div class="pure-control-group">
+                <label for="description">站点描述</label>
+                <textarea name="description" class="pure-input-1" rows="10"></textarea>
+            </div>
+            <div class="pure-controls">
+                <button class="pure-button pure-button-primary pure-button" type="submit">更新站点信息</button>
+            </div>
+        </form>
+    {% endblock %}
